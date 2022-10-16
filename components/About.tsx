@@ -49,7 +49,7 @@ const About = ({ pageInfo }: Props) => {
             <h4 className="text-4xl font-semibold">
                 Here is a <span className="underline decoration-[#F7AB0A]/60">little</span> background
             </h4>
-            <p className="text-base">
+            <p className="text-base h-[250px] overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-slate-500 scrollbar-thumb-[#F7AB0A] pr-5">
                 {pageInfo.backgroundInformation}
             </p>
         </div>

@@ -12,7 +12,7 @@ const Skill = ({ skill }: Props) => {
     <div className="">
         <motion.img
             initial={{
-                x: -200,
+                x: -100,
                 opacity: 0,
             }}
             transition={{ duration: 1 }}

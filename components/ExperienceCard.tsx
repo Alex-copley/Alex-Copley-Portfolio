@@ -55,7 +55,7 @@ const ExperienceCard = ({ experience }: Props) => {
                     : new Date(experience.dateEnded).toDateString()}
             </p>
 
-            <ul className="list-disc space-y-4 ml-5 text-lg max-h-96 overflow-y-scroll pr-5 scrollbar-thin scrolbar-track-black scrollbar-thumb-[#F7AB0A]/80">
+            <ul className="list-disc space-y-4 ml-5 sm:text-lg max-h-96 overflow-y-scroll pr-5 scrollbar-thin scrolbar-track-black scrollbar-thumb-[#F7AB0A]/80">
                 {experience.points.map((point, i) => (
                     <li key={i}>{point}</li>
                 ))}
