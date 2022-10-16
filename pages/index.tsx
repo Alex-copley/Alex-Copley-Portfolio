@@ -8,10 +8,8 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
-
 import { sanityClient } from "../sanity"
 import { groq } from "next-sanity"
-
 import { Experience, PageInfo, Project, Skill, Social } from "../typings"
 import { fetchExperiences } from '../utils/fetchExperiences';
 import { fetchPageInfo } from '../utils/fetchPageInfo';
@@ -86,11 +84,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const skills: Skill[] = await sanityClient.fetch(groq`*[_type == "skill"]`)
   const projects: Project[] = await sanityClient.fetch(groq`*[_type == "project"] {...,technologies[]->}`)
   const socials: Social[] = await sanityClient.fetch(groq`*[_type == "social"]`)
-  // const pageInfo: PageInfo = await fetchPageInfo();
-  // const experiences: Experience[] = await fetchExperiences();
-  // const skills: Skill[] = await fetchSkills();
-  // const projects: Project[] = await fetchProjects();
-  // const socials: Social[] = await fetchSocials();
  
   return {
     props: {
