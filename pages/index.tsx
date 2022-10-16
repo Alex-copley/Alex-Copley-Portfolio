@@ -32,6 +32,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
       </Head>
 
       <Header socials={socials}/>
+      
 
       <section id="hero" className="snap-start">
         <Hero pageInfo={pageInfo}/>
