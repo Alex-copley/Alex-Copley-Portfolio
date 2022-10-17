@@ -21,7 +21,7 @@ const About = ({ pageInfo }: Props) => {
         transition={{
             duration: 1.5,
         }}
-        className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+        className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center ">
 
         <h3 className="absolute top-24 uppercase tracking-[15px] text-gray-500 text-2xl">
             About
@@ -42,14 +42,14 @@ const About = ({ pageInfo }: Props) => {
             duration: 1,
         }}
         src={urlFor(pageInfo?.profilePic).url()}
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+        className="h-[200px] w-[200px] mt-[150px] md:h-86 md:w-86 md:mt-0 lg:h-96 lg:w-96 rounded-full object-cover md:rounded-lg"
         />
 
-        <div className="space-y-10 px-0 md:px-10">
-            <h4 className="text-4xl font-semibold">
+        <div className="space-y-5 px-0 mb-10 md:px-10">
+            <h4 className="text-2xl md:text-4xl font-semibold">
                 Here is a <span className="underline decoration-[#F7AB0A]/60">little</span> background
             </h4>
-            <p className="text-base h-[250px] overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-slate-500 scrollbar-thumb-[#F7AB0A] pr-5">
+            <p className="text-base h-[200px] overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-slate-500 scrollbar-thumb-[#F7AB0A] pr-5">
                 {pageInfo.backgroundInformation}
             </p>
         </div>
