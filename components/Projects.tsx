@@ -24,12 +24,12 @@ const Projects = ({ projects }: Props) => {
                 projects
             </h3>
 
-            <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+            <div className="relative w-full flex overflow-x-scroll overflow-y-hidden z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
                 {/* This map will reflect each individual project */}
                 {projects.map((project, i) => (
                     <div
                         key={project._id}
-                        className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
+                        className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
                         <a href={project?.linkToBuild}>
                         <motion.img
                             initial={{
