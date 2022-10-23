@@ -21,7 +21,7 @@ const About = ({ pageInfo }: Props) => {
             transition={{
                 duration: 1.5,
             }}
-            className="flex flex-wrap relative h-screen text-center md:text-left flex-row max-w-7xl pt-10 px-10 justify-evenly mx-auto items-center ">
+            className="flex flex-wrap relative text-center md:text-left flex-row max-w-7xl pt-10 px-10 justify-evenly mx-auto items-center ">
 
             <div>
                 <h3 className="uppercase tracking-[15px] text-gray-500 text-2xl">

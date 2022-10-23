@@ -26,7 +26,7 @@ const ExperienceCard = ({ experience }: Props) => {
         viewport={{
             once: true,
         }}
-        className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
+        className="w-[100px] h-[100px] rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
         src={urlFor(experience?.companyImage).url()}
         alt=""
         />
@@ -38,24 +38,24 @@ const ExperienceCard = ({ experience }: Props) => {
             <p className="font-bold text-2xl mt-1">
                 {experience.company}
             </p>
-            <div className=" flex space-x-2 my-2">
+            <div className="flex space-x-2 my-2">
                 {experience.technologies.map(technology => (
                         <img
                             key={technology._id}
-                            className="h-10 w-10 rounded-full object-cover"
+                            className="h-8 w-8 md:h-10 md:w-10 xl:h-20 xl:w-20 rounded-full object-cover"
                             src={urlFor(technology.image).url()}
                             alt=""
                         />
                 ))}
             </div>
-            <p className="uppercase py-5 text-gray-300">
+            <p className="uppercase py-3 text-gray-300">
                 {new Date(experience.dateStarted).toDateString()} -{" "}
                 {experience.isCurrentlyWorkingHere
                     ? "Present"
                     : new Date(experience.dateEnded).toDateString()}
             </p>
 
-            <ul className="list-disc space-y-4 ml-5 sm:text-lg max-h-96 overflow-y-scroll pr-5 scrollbar-thin scrolbar-track-black scrollbar-thumb-[#F7AB0A]/80">
+            <ul className="list-disc w-[80%] space-y-2 md:space-y-4 ml-5 sm:text-lg">
                 {experience.points.map((point, i) => (
                     <li key={i}>{point}</li>
                 ))}

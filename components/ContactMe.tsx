@@ -23,12 +23,12 @@ const ContactMe = (props: Props) => {
 
   return (
     
-    <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-        <h3 className="absolute uppercase top-24 tracking-[15px] text-gray-500 text-2xl">
+    <div className="flex flex-wrap relative flex-col text-center md:text-left max-w-7xl mt-32 px-10 justify-evenly mx-auto items-center mb-20">
+        <h3 className="uppercase tracking-[15px] text-gray-500 text-2xl">
             Contact
         </h3>
 
-        <div className="flex flex-col space-y-10 mt-32">
+        <div className="flex flex-col space-y-10 mt-10">
             <h4 className="text-2xl md:text-4xl font-semibold text-center">
                 <span className="decoration-[#F7AB0A]/50 underline">Let&apos;s Talk.</span>
             </h4>
@@ -36,17 +36,17 @@ const ContactMe = (props: Props) => {
             <div className="space-y-2">  
                 <div className="flex items-center space-x-5 justify-center">
                     <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"/>
-                    <p className="text-1xl md:text-2xl">(910) 800-9853</p>
+                    <p className="text-2xl md:text-4xl">(910) 800-9853</p>
                 </div>
 
                 <div className="flex items-center space-x-5 justify-center">
                     <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"/>
-                    <p className="text-1xl md:text-2xl">alexcopleysoftware@gmail.com</p>
+                    <p className="text-2xl md:text-4xl">alexcopleysoftware@gmail.com</p>
                 </div>
 
                 <div className="flex items-center space-x-5 justify-center">
                     <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"/>
-                    <p className="text-1xl md:text-2xl">919 Spicebush Dr</p>
+                    <p className="text-2xl md:text-4xl">919 Spicebush Dr</p>
                 </div>
             </div>
 

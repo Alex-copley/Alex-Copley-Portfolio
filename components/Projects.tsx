@@ -19,8 +19,8 @@ const Projects = ({ projects }: Props) => {
             transition={{
                 duraction: 1.5,
             }}
-            className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
-            <h3 className="absolute uppercase top-24 tracking-[15px] text-gray-500 text-2xl">
+            className="relative flex flex-wrap flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
+            <h3 className="uppercase tracking-[15px] text-gray-500 text-2xl">
                 projects
             </h3>
 
@@ -29,7 +29,7 @@ const Projects = ({ projects }: Props) => {
                 {projects.map((project, i) => (
                     <div
                         key={project._id}
-                        className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
+                        className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center p-20">
                         <a href={project?.linkToBuild}>
                         <motion.img
                             initial={{
@@ -56,7 +56,7 @@ const Projects = ({ projects }: Props) => {
                                 ))}
                             </div>
 
-                            <p className="text-lg text-center md:text-left">
+                            <p className="text-2xl text-center md:text-left">
                                 {project?.summary}
                             </p>
                         </div>
