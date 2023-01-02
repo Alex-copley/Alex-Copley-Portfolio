@@ -61,12 +61,12 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
       </section>
 
       <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
+        <footer className="sticky w-16 bottom-5 mx-auto cursor-pointer">
           <div className="flex items-center justify-center">
           <picture> 
             <img 
             className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-            src="https://media-exp1.licdn.com/dms/image/C4E03AQF3LTCXBHrpjw/profile-displayphoto-shrink_400_400/0/1646153695438?e=1671062400&v=beta&t=Swsiikzy6fdIs0oeftirN9X9TkM0r4uhYd-j5LJSgR0" alt="return to top" />
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/White_Arrow_Up.svg/1024px-White_Arrow_Up.svg.png" alt="return to top" />
           </picture>
           </div>
         </footer>

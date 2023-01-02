@@ -24,7 +24,7 @@ const Projects = ({ projects }: Props) => {
                 projects
             </h3>
 
-            <div className="relative w-full flex overflow-x-scroll overflow-y-hidden z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+            <div className="relative w-full flex overflow-x-scroll overflow-y-hidden z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thin">
                 {/* This map will reflect each individual project */}
                 {projects.map((project, i) => (
                     <div
@@ -39,7 +39,8 @@ const Projects = ({ projects }: Props) => {
                             transition={{ duration: 1.2 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            src={urlFor(project?.image).url()} alt=""
+                            src={urlFor(project?.image).url()}
+                            className="max-h-[500px]" alt=""
                         />
                         </a>
 
