@@ -19,16 +19,12 @@ const Skills = ({ skills }: Props) => {
       transition={{
         duraction: 1.5,
       }}
-      className="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-[800px] justify-center xl:space-y-0 mx-auto items-center">
-      <h3 className="absolute top-24 uppercase tracking-[15px] text-gray-500 text-2xl">
+      className="mt-10 flex flex-col max-w-[2000px] xl:px-10 min-h-[800px] xl:space-y-0 items-center">
+      <h3 className="mb-10 text-center uppercase tracking-[15px] text-gray-500 text-2xl">
         Skills
       </h3>
 
-      {/* <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
-        Hover over a skill for current proficiency
-      </h3> */}
-
-      <div className="grid grid-cols-4 gap-5">
+      <div className="max-w-[800px] grid grid-cols-4 gap-5">
         {skills?.map(skill => (
           <Skill 
             key= {skill._id}

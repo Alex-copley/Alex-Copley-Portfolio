@@ -59,19 +59,6 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
       <section id="contact">
         <ContactMe />
       </section>
-
-      <Link href="#hero">
-        <footer className="sticky w-16 bottom-5 mx-auto cursor-pointer">
-          <div className="flex items-center justify-center">
-          <picture> 
-            <img 
-            className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/White_Arrow_Up.svg/1024px-White_Arrow_Up.svg.png" alt="return to top" />
-          </picture>
-          </div>
-        </footer>
-      </Link>
-
     </div>
   );
 };
